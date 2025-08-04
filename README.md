@@ -1,5 +1,7 @@
 # Zen Better Sidebar
 
+![Better Sidebar](image.png)
+
 A modern theme extension for Zen Browser that enhances the default Firefox sidebar with a sleek, modern look and feel that perfectly matches Zen's UI design language.
 
 ## Features
