@@ -1,0 +1,21 @@
+{
+  "id": "cfafe94c-5a29-4dae-8489-6be514185474",
+  "js": true,
+  "js_files": [
+    "https://raw.githubusercontent.com/rasyidrafi/zen-better-sidebar/refs/heads/main/betterSidebar.uc.js"
+  ],
+  "name": "Better Sidebar",
+  "description": "Enhance default firefox sidebar with a modern look and feel matching Zen UI.",
+  "homepage": "https://github.com/rasyidrafi/zen-better-sidebar/",
+  "image": "https://github.com/rasyidrafi/zen-better-sidebar/blob/main/icon.png?raw=true",
+  "style": {
+    "chrome": "https://raw.githubusercontent.com/rasyidrafi/zen-better-sidebar/refs/heads/main/chrome.css"
+  },
+  "readme": "https://raw.githubusercontent.com/rasyidrafi/zen-better-sidebar/refs/heads/main/README.md",
+  "author": "rasyidrafi",
+  "version": "1.0.1",
+  "tags": ["Customization", "Sidebar"],
+  "createdAt": "2025-07-29",
+  "updatedAt": "2025-07-29",
+  "fork": ["zen"]
+}
