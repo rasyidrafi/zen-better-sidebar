@@ -8,6 +8,10 @@
     "chrome": "https://raw.githubusercontent.com/rasyidrafi/zen-better-sidebar/refs/heads/main/chrome.css"
   },
   "readme": "https://raw.githubusercontent.com/rasyidrafi/zen-better-sidebar/refs/heads/main/README.md",
+  "js": true,
+  "js_files": [
+    "https://raw.githubusercontent.com/rasyidrafi/zen-better-sidebar/refs/heads/main/betterSidebar.uc.js"
+  ],
   "author": "rasyidrafi",
   "version": "1.0.2",
   "tags": ["Customization", "Sidebar"],
