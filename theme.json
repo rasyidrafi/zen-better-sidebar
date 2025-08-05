@@ -7,6 +7,7 @@
   "style": {
     "chrome": "https://raw.githubusercontent.com/rasyidrafi/zen-better-sidebar/refs/heads/main/chrome.css"
   },
+  "js": "https://raw.githubusercontent.com/rasyidrafi/zen-better-sidebar/refs/heads/main/betterSidebar.uc.js",
   "readme": "https://raw.githubusercontent.com/rasyidrafi/zen-better-sidebar/refs/heads/main/README.md",
   "author": "rasyidrafi",
   "version": "1.0.2",
