@@ -8,6 +8,8 @@
   gap: 8px !important;
   transform: translateX(0);
   overflow: hidden;
+  margin-left: 0px !important;
+  margin-right: 2px !important;
 }
 
 #sidebar-header {
