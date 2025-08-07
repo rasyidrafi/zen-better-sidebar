@@ -156,7 +156,7 @@
   }
 
   treechildren::-moz-tree-cell-text {
-    color: black !important;
+    color: var(--toolbox-textcolor-inactive) !important;
   }
 }
 
@@ -275,6 +275,6 @@
   }
 
   treechildren::-moz-tree-cell-text {
-    color: black !important;
+    color: var(--toolbox-textcolor-inactive) !important;
   }
 }
