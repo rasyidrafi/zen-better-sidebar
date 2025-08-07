@@ -113,10 +113,6 @@
       --tab-selected-shadow,
       0 1px 1px 1px light-dark(rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.1))
     ) !important;
-    color: var(
-      --tab-selected-textcolor,
-      light-dark(rgb(21, 20, 26), rgb(255, 255, 255))
-    ) !important;
   }
 
   treechildren.sidebar-placesTreechildren::-moz-tree-row(hover) {
@@ -136,6 +132,31 @@
       focus
     ) {
     outline-color: transparent !important;
+  }
+
+  treechildren.sidebar-placesTreechildren::-moz-tree-image(selected, focus),
+  treechildren.sidebar-placesTreechildren::-moz-tree-twisty(selected, focus),
+  treechildren.sidebar-placesTreechildren::-moz-tree-cell-text(
+      selected,
+      focus
+    ) {
+    color: var(
+      --tab-selected-textcolor,
+      light-dark(rgb(21, 20, 26), rgb(255, 255, 255))
+    ) !important;
+  }
+
+  treechildren::-moz-tree-image(selected),
+  treechildren::-moz-tree-twisty(selected),
+  treechildren::-moz-tree-cell-text(selected) {
+    color: var(
+      --tab-selected-textcolor,
+      light-dark(rgb(21, 20, 26), rgb(255, 255, 255))
+    ) !important;
+  }
+
+  treechildren::-moz-tree-cell-text {
+    color: black !important;
   }
 }
 
@@ -211,10 +232,6 @@
       --tab-selected-shadow,
       0 1px 1px 1px light-dark(rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.1))
     ) !important;
-    color: var(
-      --tab-selected-textcolor,
-      light-dark(rgb(21, 20, 26), rgb(255, 255, 255))
-    ) !important;
   }
 
   treechildren.sidebar-placesTreechildren::-moz-tree-row(hover) {
@@ -234,5 +251,30 @@
       focus
     ) {
     outline-color: transparent !important;
+  }
+
+  treechildren.sidebar-placesTreechildren::-moz-tree-image(selected, focus),
+  treechildren.sidebar-placesTreechildren::-moz-tree-twisty(selected, focus),
+  treechildren.sidebar-placesTreechildren::-moz-tree-cell-text(
+      selected,
+      focus
+    ) {
+    color: var(
+      --tab-selected-textcolor,
+      light-dark(rgb(21, 20, 26), rgb(255, 255, 255))
+    ) !important;
+  }
+
+  treechildren::-moz-tree-image(selected),
+  treechildren::-moz-tree-twisty(selected),
+  treechildren::-moz-tree-cell-text(selected) {
+    color: var(
+      --tab-selected-textcolor,
+      light-dark(rgb(21, 20, 26), rgb(255, 255, 255))
+    ) !important;
+  }
+
+  treechildren::-moz-tree-cell-text {
+    color: black !important;
   }
 }
