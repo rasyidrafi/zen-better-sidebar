@@ -2,37 +2,15 @@
 
 ![Better Sidebar](image.png)
 
-[![Version](https://img.shields.io/badge/version-1.0.3-blue.svg)](https://github.com/rasyidrafi/zen-better-sidebar)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Zen Browser](https://img.shields.io/badge/zen-browser-compatible-orange.svg)](https://zen-browser.app/)
-
-**Version 1.0.3**
-
 A modern theme extension for Zen Browser that enhances the default Firefox sidebar with a sleek, modern look and feel that perfectly matches Zen's UI design language.
-
-## Table of Contents
-
-- [Features](#features)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [What This Theme Does](#what-this-theme-does)
-- [Compatibility](#compatibility)
-- [Requirements](#requirements)
-- [Contributing](#contributing)
-- [Support](#support)
-- [License](#license)
-- [Changelog](#changelog)
-- [Author](#author)
 
 ## Features
 
-- 🎨 **Modern Design** - Transforms the sidebar with rounded corners and modern styling that matches Zen's aesthetic
-- 🔍 **Enhanced Search** - Improved search box styling with better visual feedback and hover states
-- 🎯 **Clean Navigation** - Streamlined sidebar header and navigation elements for better usability
-- 📚 **Better Tree View** - Enhanced bookmark and history tree styling with smooth hover effects and proper selection states
-- ⚡ **Lightweight** - Pure CSS implementation with minimal JavaScript enhancement for optimal performance
-- 🎭 **Theme Integration** - Seamless integration with Zen's color scheme and theming system
-- 🔧 **Easy Installation** - Simple installation through Sine theme manager
+- 🎨 **Modern Design** - Transforms the sidebar with rounded corners and modern styling
+- 🔍 **Enhanced Search** - Improved search box styling with better visual feedback
+- 🎯 **Clean Navigation** - Streamlined sidebar header and navigation elements
+- 📚 **Better Tree View** - Enhanced bookmark and history tree styling with hover effects
+- ⚡ **Lightweight** - Pure CSS implementation with JavaScript enhancement
 
 ## Prerequisites
 
@@ -80,46 +58,16 @@ The theme includes both CSS styling and JavaScript enhancements to provide the b
 
 ## Compatibility
 
-- ✅ **Zen Browser** (Primary target)
-- ✅ **Firefox** (Requires Sine theme manager)
-- ⚠️ **Firefox ESR** (May have limited compatibility)
-
-## Requirements
-
-- **Sine Theme Manager** - Required for installation and management
-- **Zen Browser** or **Firefox** (latest versions recommended)
+- ✅ Zen Browser (Primary target)
 
 ## Contributing
 
 Found a bug or want to suggest an improvement? Feel free to open an issue or submit a pull request on the [GitHub repository](https://github.com/rasyidrafi/zen-better-sidebar/).
 
-### How to Contribute
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## Support
-
-If you encounter any issues or need help:
-
-- Check the [Issues](https://github.com/rasyidrafi/zen-better-sidebar/issues) page for known problems
-- Open a new issue if your problem isn't listed
-- For Sine-related issues, visit the [Sine repository](https://github.com/CosmoCreeper/Sine)
-
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Changelog
-
-### Version 1.0.3 (August 5, 2025)
-- Enhanced sidebar styling and modern design improvements
-- Improved compatibility with latest Zen Browser versions
-- Better integration with Zen's color scheme and theming
+This project is open source and available under standard open source terms.
 
 ## Author
 
-Created by [Muhammad Rasyid Rafi'i](https://github.com/rasyidrafi)
+Created by [rasyidrafi](https://github.com/rasyidrafi)
