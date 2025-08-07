@@ -106,8 +106,16 @@
 
   treechildren.sidebar-placesTreechildren::-moz-tree-row(selected) {
     background-color: var(
-      --zen-primary-color,
-      rgba(243, 202, 176, 255)
+      --tab-selected-bgcolor,
+      light-dark(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.12))
+    ) !important;
+    box-shadow: var(
+      --tab-selected-shadow,
+      0 1px 1px 1px light-dark(rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.1))
+    ) !important;
+    color: var(
+      --tab-selected-textcolor,
+      light-dark(rgb(21, 20, 26), rgb(255, 255, 255))
     ) !important;
   }
 
@@ -196,8 +204,16 @@
 
   treechildren.sidebar-placesTreechildren::-moz-tree-row(selected) {
     background-color: var(
-      --zen-primary-color,
-      rgba(243, 202, 176, 255)
+      --tab-selected-bgcolor,
+      light-dark(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.12))
+    ) !important;
+    box-shadow: var(
+      --tab-selected-shadow,
+      0 1px 1px 1px light-dark(rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0.1))
+    ) !important;
+    color: var(
+      --tab-selected-textcolor,
+      light-dark(rgb(21, 20, 26), rgb(255, 255, 255))
     ) !important;
   }
 
