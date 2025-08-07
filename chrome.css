@@ -61,89 +61,92 @@
   }
 }
 
-#sidebar-search-container {
-  padding: 0px !important;
-  gap: 5px !important;
-  margin-bottom: 8px !important;
-}
+@-moz-document url("chrome://browser/content/places/historySidebar.xhtml")
+{
+  #sidebar-search-container {
+    padding: 0px !important;
+    gap: 5px !important;
+    margin-bottom: 8px !important;
+  }
 
-#search-box {
-  --input-text-border-radius: var(--border-radius-medium) !important;
-  --input-text-border: none !important;
-  --input-text-background-color: light-dark(
-    color-mix(in oklch, rgba(255, 255, 255, 0.8) 8%, transparent),
-    color-mix(in oklch, rgba(255, 255, 255, 0.8) 12.5%, transparent)
-  ) !important;
-  --focus-outline-color: transparent !important;
-  overflow: hidden !important;
-  border-radius: var(--border-radius-medium) !important;
-  --space-xxsmall: 5px !important;
-}
+  #search-box {
+    --input-text-border-radius: var(--border-radius-medium) !important;
+    --input-text-border: none !important;
+    --input-text-background-color: light-dark(
+      color-mix(in oklch, rgba(255, 255, 255, 0.8) 8%, transparent),
+      color-mix(in oklch, rgba(255, 255, 255, 0.8) 12.5%, transparent)
+    ) !important;
+    --focus-outline-color: transparent !important;
+    overflow: hidden !important;
+    border-radius: var(--border-radius-medium) !important;
+    --space-xxsmall: 5px !important;
+  }
 
-#search-box:hover {
-  --input-text-background-color: light-dark(
-    rgba(0, 0, 0, 0.1),
-    light-dark(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.2))
-  ) !important;
-}
+  #search-box:hover {
+    --input-text-background-color: light-dark(
+      rgba(0, 0, 0, 0.1),
+      light-dark(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.2))
+    ) !important;
+  }
 
-#viewButton {
-  border-radius: var(--border-radius-medium) !important;
-  border: none !important;
-  padding: 5px 8px !important;
-  background-color: light-dark(
-    color-mix(in oklch, rgba(255, 255, 255, 0.8) 8%, transparent),
-    color-mix(in oklch, rgba(255, 255, 255, 0.8) 12.5%, transparent)
-  ) !important;
-}
+  #viewButton {
+    border-radius: var(--border-radius-medium) !important;
+    border: none !important;
+    padding: 5px 8px !important;
+    background-color: light-dark(
+      color-mix(in oklch, rgba(255, 255, 255, 0.8) 8%, transparent),
+      color-mix(in oklch, rgba(255, 255, 255, 0.8) 12.5%, transparent)
+    ) !important;
+  }
 
-#viewButton:hover {
-  background-color: light-dark(
-    rgba(0, 0, 0, 0.1),
-    light-dark(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.2))
-  ) !important;
-}
-#viewButton .button-box {
-  gap: 5px !important;
-}
+  #viewButton:hover {
+    background-color: light-dark(
+      rgba(0, 0, 0, 0.1),
+      light-dark(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.2))
+    ) !important;
+  }
+  #viewButton .button-box {
+    gap: 5px !important;
+  }
 
-#historyTree {
-  margin-top: -3px !important;
-}
+  #historyTree {
+    margin-top: -3px !important;
+  }
 
-treechildren.sidebar-placesTreechildren::-moz-tree-row {
-  border: 0px solid transparent !important;
-  color: white !important;
-  border-radius: var(--border-radius-medium) !important;
-  margin-top: 3px !important;
-}
+  treechildren.sidebar-placesTreechildren::-moz-tree-row {
+    border: 0px solid transparent !important;
+    color: white !important;
+    border-radius: var(--border-radius-medium) !important;
+    margin-top: 3px !important;
+  }
 
-treechildren.sidebar-placesTreechildren::-moz-tree-row(multicol, odd) {
-  background-color: transparent !important;
-}
+  treechildren.sidebar-placesTreechildren::-moz-tree-row(multicol, odd) {
+    background-color: transparent !important;
+  }
 
-treechildren.sidebar-placesTreechildren::-moz-tree-row(selected) {
-  background-color: var(
-    --zen-primary-color,
-    rgba(243, 202, 176, 255)
-  ) !important;
-}
+  treechildren.sidebar-placesTreechildren::-moz-tree-row(selected) {
+    background-color: var(
+      --zen-primary-color,
+      rgba(243, 202, 176, 255)
+    ) !important;
+  }
 
-treechildren.sidebar-placesTreechildren::-moz-tree-row(hover) {
-  background-color: light-dark(
-    rgba(0, 0, 0, 0.1),
-    light-dark(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.2))
-  );
-}
+  treechildren.sidebar-placesTreechildren::-moz-tree-row(hover) {
+    background-color: light-dark(
+      rgba(0, 0, 0, 0.1),
+      light-dark(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.2))
+    );
+  }
 
-treechildren.sidebar-placesTreechildren::-moz-tree-row(current, focus) {
-  outline: 0px solid transparent !important;
-}
+  treechildren.sidebar-placesTreechildren::-moz-tree-row(current, focus) {
+    outline: 0px solid transparent !important;
+  }
 
-treechildren.sidebar-placesTreechildren::-moz-tree-row(
-    selected,
-    current,
-    focus
-  ) {
-  outline-color: transparent !important;
+  treechildren.sidebar-placesTreechildren::-moz-tree-row(
+      selected,
+      current,
+      focus
+    ) {
+    outline-color: transparent !important;
+  }
 }
