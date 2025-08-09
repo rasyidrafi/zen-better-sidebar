@@ -68,88 +68,6 @@
 
 @-moz-document url("chrome://browser/content/places/bookmarksSidebar.xhtml")
 {
-  @media (-moz-bool-pref: "mod.bettersidebar.usefromzen") {
-    :root {
-      --mod-bettersidebar-treetextprimary-final: var(
-        --toolbox-textcolor-inactive,
-        var(--mod-bettersidebar-treetextprimary, white)
-      ) !important;
-
-      --mod-bettersidebar-treetextprimaryselected-final: var(
-        --zen-colors-primary-foreground,
-        var(
-          --tab-selected-textcolor,
-          light-dark(rgb(21, 20, 26), rgb(255, 255, 255))
-        )
-      ) !important;
-
-      --mod-bettersidebar-treetextbg-final: transparent !important;
-
-      --mod-bettersidebar-treetextbghover-final: var(
-        --tab-hover-background-color,
-        light-dark(
-          rgba(0, 0, 0, 0.1),
-          light-dark(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.2))
-        )
-      ) !important;
-
-      --mod-bettersidebar-treetextbgselected-final: var(
-        --zen-primary-color,
-        var(
-          --tab-selected-bgcolor,
-          light-dark(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.12))
-        )
-      );
-    }
-  }
-
-  @media not (-moz-bool-pref: "mod.bettersidebar.usefromzen") {
-    :root {
-      --mod-bettersidebar-treetextprimary-final: var(
-        --mod-bettersidebar-treetextprimary,
-        --toolbox-textcolor-inactive
-      ) !important;
-
-      --mod-bettersidebar-treetextprimaryselected-final: var(
-        --mod-bettersidebar-treetextprimaryselected,
-        var(
-          --zen-colors-primary-foreground,
-          var(
-            --tab-selected-textcolor,
-            light-dark(rgb(21, 20, 26), rgb(255, 255, 255))
-          )
-        )
-      ) !important;
-
-      --mod-bettersidebar-treetextbg-final: var(
-        --mod-bettersidebar-treetextbg,
-        transparent
-      ) !important;
-
-      --mod-bettersidebar-treetextbghover-final: var(
-        --mod-bettersidebar-treetextbghover,
-        var(
-          --tab-hover-background-color,
-          light-dark(
-            rgba(0, 0, 0, 0.1),
-            light-dark(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.2))
-          )
-        )
-      ) !important;
-
-      --mod-bettersidebar-treetextbgselected-final: var(
-        --mod-bettersidebar-treetextbgselected,
-        var(
-          --zen-primary-color,
-          var(
-            --tab-selected-bgcolor,
-            light-dark(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.12))
-          )
-        )
-      );
-    }
-  }
-
   #sidebar-search-container {
     padding: 0px !important;
     gap: 5px !important;
@@ -184,16 +102,16 @@
     border: 0px solid transparent !important;
     border-radius: var(--border-radius-medium) !important;
     margin-top: 3px !important;
-    background: var(--mod-bettersidebar-treetextbg-final) !important;
   }
 
   treechildren.sidebar-placesTreechildren::-moz-tree-row(multicol, odd) {
-    background: var(--mod-bettersidebar-treetextbg-final) !important;
+    background-color: transparent !important;
   }
 
   treechildren.sidebar-placesTreechildren::-moz-tree-row(selected) {
     background-color: var(
-      --mod-bettersidebar-treetextbgselected-final
+      --tab-selected-bgcolor,
+      light-dark(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.12))
     ) !important;
     box-shadow: var(
       --tab-selected-shadow,
@@ -202,7 +120,10 @@
   }
 
   treechildren.sidebar-placesTreechildren::-moz-tree-row(hover) {
-    background-color: var(--mod-bettersidebar-treetextbghover-final) !important;
+    background-color: light-dark(
+      rgba(0, 0, 0, 0.1),
+      light-dark(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.2))
+    );
   }
 
   treechildren.sidebar-placesTreechildren::-moz-tree-row(current, focus) {
@@ -223,104 +144,28 @@
       selected,
       focus
     ) {
-    color: var(--mod-bettersidebar-treetextprimaryselected-final) !important;
+    color: var(
+      --tab-selected-textcolor,
+      light-dark(rgb(21, 20, 26), rgb(255, 255, 255))
+    ) !important;
   }
 
   treechildren::-moz-tree-image(selected),
   treechildren::-moz-tree-twisty(selected),
   treechildren::-moz-tree-cell-text(selected) {
-    color: var(--mod-bettersidebar-treetextprimaryselected-final) !important;
+    color: var(
+      --tab-selected-textcolor,
+      light-dark(rgb(21, 20, 26), rgb(255, 255, 255))
+    ) !important;
   }
 
   treechildren::-moz-tree-cell-text {
-    color: var(--mod-bettersidebar-treetextprimary-final) !important;
+    color: var(--toolbox-textcolor-inactive) !important;
   }
 }
 
 @-moz-document url("chrome://browser/content/places/historySidebar.xhtml")
 {
-  @media (-moz-bool-pref: "mod.bettersidebar.usefromzen") {
-    :root {
-      --mod-bettersidebar-treetextprimary-final: var(
-        --toolbox-textcolor-inactive,
-        var(--mod-bettersidebar-treetextprimary, white)
-      ) !important;
-
-      --mod-bettersidebar-treetextprimaryselected-final: var(
-        --zen-colors-primary-foreground,
-        var(
-          --tab-selected-textcolor,
-          light-dark(rgb(21, 20, 26), rgb(255, 255, 255))
-        )
-      ) !important;
-
-      --mod-bettersidebar-treetextbg-final: transparent !important;
-
-      --mod-bettersidebar-treetextbghover-final: var(
-        --tab-hover-background-color,
-        light-dark(
-          rgba(0, 0, 0, 0.1),
-          light-dark(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.2))
-        )
-      ) !important;
-
-      --mod-bettersidebar-treetextbgselected-final: var(
-        --zen-primary-color,
-        var(
-          --tab-selected-bgcolor,
-          light-dark(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.12))
-        )
-      );
-    }
-  }
-
-  @media not (-moz-bool-pref: "mod.bettersidebar.usefromzen") {
-    :root {
-      --mod-bettersidebar-treetextprimary-final: var(
-        --mod-bettersidebar-treetextprimary,
-        --toolbox-textcolor-inactive
-      ) !important;
-
-      --mod-bettersidebar-treetextprimaryselected-final: var(
-        --mod-bettersidebar-treetextprimaryselected,
-        var(
-          --zen-colors-primary-foreground,
-          var(
-            --tab-selected-textcolor,
-            light-dark(rgb(21, 20, 26), rgb(255, 255, 255))
-          )
-        )
-      ) !important;
-
-      --mod-bettersidebar-treetextbg-final: var(
-        --mod-bettersidebar-treetextbg,
-        transparent
-      ) !important;
-
-      --mod-bettersidebar-treetextbghover-final: var(
-        --mod-bettersidebar-treetextbghover,
-        var(
-          --tab-hover-background-color,
-          light-dark(
-            rgba(0, 0, 0, 0.1),
-            light-dark(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.2))
-          )
-        )
-      ) !important;
-
-      --mod-bettersidebar-treetextbgselected-final: var(
-        --mod-bettersidebar-treetextbgselected,
-        var(
-          --zen-primary-color,
-          var(
-            --tab-selected-bgcolor,
-            light-dark(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.12))
-          )
-        )
-      );
-    }
-  }
-
   #sidebar-search-container {
     padding: 0px !important;
     gap: 5px !important;
@@ -373,18 +218,19 @@
 
   treechildren.sidebar-placesTreechildren::-moz-tree-row {
     border: 0px solid transparent !important;
+    color: white !important;
     border-radius: var(--border-radius-medium) !important;
     margin-top: 3px !important;
-    background: var(--mod-bettersidebar-treetextbg-final) !important;
   }
 
   treechildren.sidebar-placesTreechildren::-moz-tree-row(multicol, odd) {
-    background: var(--mod-bettersidebar-treetextbg-final) !important;
+    background-color: transparent !important;
   }
 
   treechildren.sidebar-placesTreechildren::-moz-tree-row(selected) {
     background-color: var(
-      --mod-bettersidebar-treetextbgselected-final
+      --tab-selected-bgcolor,
+      light-dark(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.12))
     ) !important;
     box-shadow: var(
       --tab-selected-shadow,
@@ -393,7 +239,10 @@
   }
 
   treechildren.sidebar-placesTreechildren::-moz-tree-row(hover) {
-    background-color: var(--mod-bettersidebar-treetextbghover-final) !important;
+    background-color: light-dark(
+      rgba(0, 0, 0, 0.1),
+      light-dark(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.2))
+    );
   }
 
   treechildren.sidebar-placesTreechildren::-moz-tree-row(current, focus) {
@@ -414,16 +263,22 @@
       selected,
       focus
     ) {
-    color: var(--mod-bettersidebar-treetextprimaryselected-final) !important;
+    color: var(
+      --tab-selected-textcolor,
+      light-dark(rgb(21, 20, 26), rgb(255, 255, 255))
+    ) !important;
   }
 
   treechildren::-moz-tree-image(selected),
   treechildren::-moz-tree-twisty(selected),
   treechildren::-moz-tree-cell-text(selected) {
-    color: var(--mod-bettersidebar-treetextprimaryselected-final) !important;
+    color: var(
+      --tab-selected-textcolor,
+      light-dark(rgb(21, 20, 26), rgb(255, 255, 255))
+    ) !important;
   }
 
   treechildren::-moz-tree-cell-text {
-    color: var(--mod-bettersidebar-treetextprimary-final) !important;
+    color: var(--toolbox-textcolor-inactive) !important;
   }
 }
