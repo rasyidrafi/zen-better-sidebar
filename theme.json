@@ -7,9 +7,10 @@
   "style": {
     "chrome": "https://raw.githubusercontent.com/rasyidrafi/zen-better-sidebar/refs/heads/main/chrome.css"
   },
+  "preferences": "https://raw.githubusercontent.com/rasyidrafi/zen-better-sidebar/refs/heads/main/preferences.json",
   "readme": "https://raw.githubusercontent.com/rasyidrafi/zen-better-sidebar/refs/heads/main/README.md",
   "author": "rasyidrafi",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "tags": ["Customization", "Sidebar"],
   "createdAt": "2025-07-29",
   "updatedAt": "2025-08-07",

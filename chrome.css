@@ -3,16 +3,24 @@
   #sidebar {
     border-radius: var(--border-radius-medium) !important;
     overflow: hidden !important;
-    background: transparent !important;
   }
 
   #sidebar-box {
-    box-shadow: none !important;
     gap: 8px !important;
     transform: translateX(0);
     overflow: hidden;
     margin-left: 0px !important;
     margin-right: 2px !important;
+  }
+
+  @media (-moz-bool-pref: "mod.compacttpr.usetransparentsidebar") {
+    #sidebar {
+      background: transparent !important;
+    }
+
+    #sidebar-box {
+      box-shadow: none !important;
+    }
   }
 
   #sidebar-header {
