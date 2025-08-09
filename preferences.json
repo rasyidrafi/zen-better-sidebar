@@ -1,8 +1,20 @@
 [
   {
-    "property": "mod.compacttpr.usetransparentsidebar",
+    "property": "mod.bettersidebar.usetransparentsidebar",
     "label": "Enable/Disable Transparent Sidebar",
     "type": "checkbox",
     "defaultValue": true
+  },
+  {
+    "property": "mod.bettersidebar.usefromzen",
+    "label": "Use default Zen Browser Color (Will override the custom color below)",
+    "type": "checkbox",
+    "defaultValue": true
+  },
+  {
+    "property": "mod.bettersidebar.treetextprimary",
+    "label": "Tree Text Primary Color",
+    "type": "string",
+    "defaultValue": "rgba(243, 202, 176, 255)"
   }
 ]

@@ -11,15 +11,12 @@
     overflow: hidden;
     margin-left: 0px !important;
     margin-right: 2px !important;
+    box-shadow: none !important;
   }
 
-  @media (-moz-bool-pref: "mod.compacttpr.usetransparentsidebar") {
+  @media (-moz-bool-pref: "mod.bettersidebar.usetransparentsidebar") {
     #sidebar {
       background: transparent !important;
-    }
-
-    #sidebar-box {
-      box-shadow: none !important;
     }
   }
 
@@ -71,6 +68,24 @@
 
 @-moz-document url("chrome://browser/content/places/bookmarksSidebar.xhtml")
 {
+  @media (-moz-bool-pref: "mod.bettersidebar.usefromzen") {
+    :root {
+      --mod-bettersidebar-treetextprimary-final: var(
+        --zen-primary-color,
+        var(--mod-bettersidebar-treetextprimary, rgba(243, 202, 176, 255))
+      ) !important;
+    }
+  }
+
+  @media not (-moz-bool-pref: "mod.bettersidebar.usefromzen") {
+    :root {
+      --mod-bettersidebar-treetextprimary-final: var(
+        --mod-bettersidebar-treetextprimary,
+        rgba(243, 202, 176, 255)
+      ) !important;
+    }
+  }
+
   #sidebar-search-container {
     padding: 0px !important;
     gap: 5px !important;
@@ -103,7 +118,6 @@
 
   treechildren.sidebar-placesTreechildren::-moz-tree-row {
     border: 0px solid transparent !important;
-    color: white !important;
     border-radius: var(--border-radius-medium) !important;
     margin-top: 3px !important;
   }
@@ -164,12 +178,30 @@
   }
 
   treechildren::-moz-tree-cell-text {
-    color: var(--toolbox-textcolor-inactive) !important;
+    color: var(--mod-bettersidebar-treetextprimary-final) !important;
   }
 }
 
 @-moz-document url("chrome://browser/content/places/historySidebar.xhtml")
 {
+  @media (-moz-bool-pref: "mod.bettersidebar.usefromzen") {
+    :root {
+      --mod-bettersidebar-treetextprimary-final: var(
+        --zen-primary-color,
+        var(--mod-bettersidebar-treetextprimary, rgba(243, 202, 176, 255))
+      ) !important;
+    }
+  }
+
+  @media not (-moz-bool-pref: "mod.bettersidebar.usefromzen") {
+    :root {
+      --mod-bettersidebar-treetextprimary-final: var(
+        --mod-bettersidebar-treetextprimary,
+        rgba(243, 202, 176, 255)
+      ) !important;
+    }
+  }
+
   #sidebar-search-container {
     padding: 0px !important;
     gap: 5px !important;
@@ -196,33 +228,12 @@
     ) !important;
   }
 
-  #viewButton {
-    border-radius: var(--border-radius-medium) !important;
-    border: none !important;
-    padding: 5px 8px !important;
-    background-color: light-dark(
-      color-mix(in oklch, rgba(255, 255, 255, 0.8) 8%, transparent),
-      color-mix(in oklch, rgba(255, 255, 255, 0.8) 12.5%, transparent)
-    ) !important;
-  }
-
-  #viewButton:hover {
-    background-color: light-dark(
-      rgba(0, 0, 0, 0.1),
-      light-dark(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.2))
-    ) !important;
-  }
-  #viewButton .button-box {
-    gap: 5px !important;
-  }
-
   #historyTree {
     margin-top: -3px !important;
   }
 
   treechildren.sidebar-placesTreechildren::-moz-tree-row {
     border: 0px solid transparent !important;
-    color: white !important;
     border-radius: var(--border-radius-medium) !important;
     margin-top: 3px !important;
   }
@@ -283,6 +294,6 @@
   }
 
   treechildren::-moz-tree-cell-text {
-    color: var(--toolbox-textcolor-inactive) !important;
+    color: var(--mod-bettersidebar-treetextprimary-final) !important;
   }
 }
