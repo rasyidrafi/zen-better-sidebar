@@ -1,8 +1,0 @@
-[
-  {
-    "property": "mod.bettersidebar.usetransparentsidebar",
-    "label": "Enable/Disable Transparent Sidebar",
-    "type": "checkbox",
-    "defaultValue": true
-  }
-]

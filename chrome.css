@@ -3,6 +3,7 @@
   #sidebar {
     border-radius: var(--border-radius-medium) !important;
     overflow: hidden !important;
+    background: transparent !important;
   }
 
   #sidebar-box {
@@ -12,12 +13,6 @@
     margin-left: 0px !important;
     margin-right: 2px !important;
     box-shadow: none !important;
-  }
-
-  @media (-moz-bool-pref: "mod.bettersidebar.usetransparentsidebar") {
-    #sidebar {
-      background: transparent !important;
-    }
   }
 
   #sidebar-header {
