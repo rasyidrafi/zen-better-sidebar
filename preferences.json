@@ -15,6 +15,30 @@
     "property": "mod.bettersidebar.treetextprimary",
     "label": "Tree Text Primary Color",
     "type": "string",
-    "defaultValue": "rgba(243, 202, 176, 255)"
+    "defaultValue": "var(--toolbox-textcolor-inactive)"
+  },
+  {
+    "property": "mod.bettersidebar.treetextprimaryselected",
+    "label": "Tree Text Primary Color (Selected)",
+    "type": "string",
+    "defaultValue": "var(--zen-colors-primary-foreground)"
+  },
+  {
+    "property": "mod.bettersidebar.treetextbg",
+    "label": "Tree Item Background Color",
+    "type": "string",
+    "defaultValue": "transparent"
+  },
+  {
+    "property": "mod.bettersidebar.treetextbghover",
+    "label": "Tree Item Background Color (Hover)",
+    "type": "string",
+    "defaultValue": "var(--tab-hover-background-color)"
+  },
+  {
+    "property": "mod.bettersidebar.treetextbgselected",
+    "label": "Tree Item Background Color (Selected)",
+    "type": "string",
+    "defaultValue": "var(--zen-primary-color)"
   }
 ]
