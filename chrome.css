@@ -78,7 +78,7 @@
     ) !important;
     --focus-outline-color: transparent !important;
     overflow: hidden !important;
-    border-radius: var(--border-radius-medium) !important;
+    border-radius: calc(var(--border-radius-medium) + 1px) !important;
     --space-xxsmall: 5px !important;
   }
 
@@ -176,7 +176,7 @@
     ) !important;
     --focus-outline-color: transparent !important;
     overflow: hidden !important;
-    border-radius: var(--border-radius-medium) !important;
+    border-radius: calc(var(--border-radius-medium) + 1px) !important;
     --space-xxsmall: 5px !important;
   }
 
