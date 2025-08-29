@@ -14,7 +14,7 @@
     margin-right: 2px !important;
     box-shadow: none !important;
     background: transparent !important;
-    padding: var(--zen-toolbox-padding)
+    padding: 0 var(--zen-toolbox-padding);
   }
 
   #sidebar-header {
