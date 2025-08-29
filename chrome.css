@@ -1,5 +1,5 @@
 @-moz-document url("chrome://browser/content/browser.xhtml")
-{
+{ 
   #sidebar {
     border-radius: var(--border-radius-medium) !important;
     overflow: hidden !important;
@@ -13,6 +13,8 @@
     margin-left: 0px !important;
     margin-right: 2px !important;
     box-shadow: none !important;
+    background: transparent !important;
+    padding: var(--zen-toolbox-padding)
   }
 
   #sidebar-header {
